@@ -1,3 +1,49 @@
-h1{
-  color: red;
+header{
+  padding-bottom: 15px;
+  .container{
+    @include outer-container;
+  }
+  .logo{
+    @include span-columns(4);
+    vertical-align: middle;
+  }
+  nav{
+    @include span-columns(8);
+    vertical-align: middle;
+  }
+}
+
+.logo{
+  figure{
+    margin-left: 0px;
+  }
+}
+
+.navbar-header{
+  height: 83px;
+  line-height: 83px;
+  li{
+    display: inline-block;
+    margin-right: 5px;
+    &:nth-last-child(1){
+      margin-right: 0px;
+    }
+  }
+  a{
+    font-size: $size14;
+    line-height: $size14;
+    color: $color-grey5;
+    font-family: $secundary-font;
+    padding: 12px 15px;
+    display: block;
+    border-radius: 5px;
+    text-transform: uppercase;
+    &:active,&.active{
+      color: $color-white;
+      background: $bg-red;
+    }
+    &:hover{
+      opacity: 0.5
+    }
+  }
 }
