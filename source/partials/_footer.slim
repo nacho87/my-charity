@@ -1,9 +1,9 @@
 footer
   .container
-    nav
+    nav.navbar-bottom
       ul
         li
-          a href="" Home
+          a.active href="" Home
         li
           a href="" About us
         li
@@ -16,21 +16,29 @@ footer
           a href="" Gallery
         li
           a href="" Contact us
-    .follow-us
-      h4 Follow Us
-      .box-social
-        .facebook
-        .twitter
-        .google-plus
-    .newsletter
-      form
-        input
-        button
-    .contact-us
-      h4 Contact Us
-      ul
-        li Address
-        li New Street
-        li ph:xxxxx-xxx-xxx
+    .footer-row
+      .follow-us
+        h4 Follow Us
+        .box-social
+          ul
+            li
+              a.facebook.icon-facebook href="#"
+            li
+              a.twitter.icon-twitter href="#"
+            li
+              a.google-plus.icon-googleplus href="#"
+      
+      .newsletter
+        h4 Follow Us
+        form
+          input type="email" placeholder="Enter your email" required="required"
+          button type="submit" Subscribe
+      
+      .contact-us
+        h4 Contact Us
+        ul
+          li Address
+          li New Street
+          li ph:xxxxx-xxx-xxx
     .copyright
-      h5 My Charity © 2013 Allright Reserved
+      p My Charity © 2013 Allright Reserved

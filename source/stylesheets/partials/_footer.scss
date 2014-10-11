@@ -1,0 +1,139 @@
+footer{
+  background: $bg-grey;
+}
+
+.navbar-bottom{
+  text-align: center;
+  height: 130px;
+  line-height: 130px;
+  border-bottom: 1px solid rgba(255,255,255,0.10);
+
+  li{
+    @include inline-block;
+    margin-right: 60px;
+    &:nth-last-child(1){
+      margin-right: 0;
+    }
+
+    a{
+      font-family: $robotoslab_regular;
+      color: $color-grey;
+      font-size: $size15;
+      &:active,&.active,&:hover{
+        color: $color-white;
+      }
+    }
+  }
+}
+
+.footer-row{
+  @include outer-container;
+  border-bottom: 1px solid rgba(255,255,255,0.10);
+  padding-top: 40px;
+  padding-bottom: 37px;
+
+  .follow-us,.newsletter,.contact-us{
+    @include span-columns(4);
+  }
+  
+  h4{
+    color: $color-grey2;
+    font-size: $size18;
+    margin-bottom: 12px;
+  }
+}
+
+.box-social{
+
+  li{
+    display: inline-block;
+    margin-right: 10px;
+    &:nth-last-child(1){
+      margin-right: 0px;
+    }
+  }
+
+  a{
+    height: 40px;
+    width: 40px;
+    color: $color-white;
+    text-align: center;
+    line-height: 40px;
+    font-size: $size23;
+    display: block;
+    &:active,&:hover{
+      opacity: 0.5;
+    }
+  }
+  .facebook{
+    background: $color-facebook;
+  }
+  .twitter{
+    background: $color-twitter;
+  }
+  .google-plus{
+    background: $color-googleplus;
+  }
+}
+
+.newsletter{
+  form,input,button{
+    height: 40px;
+  }
+  form{
+    position: relative;
+  }
+  input{
+    background: $bg-grey1;
+    font-size: 14px;
+    border: 0;
+    border-radius: 0;
+    padding-left: 20px;
+    padding-right: 130px;
+    color: $color-white;
+    @include placeholder {
+      color: $color-grey3;
+    }
+    &:active,&:focus{
+      box-shadow: inset 0 1px 3px rgba(255, 255, 255, 0.06), 0 0 5px rgba(155, 36, 45, 0.7);
+      outline: none;
+    }
+  }
+
+  button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin:0;
+    font-size: 16px;
+    background: $bg-red;
+    font-weight: normal;
+    width: 123px;
+    outline: none;
+    border-radius: 0;
+    &:active{
+      opacity: 0.5;
+    }
+  }
+}
+
+.contact-us{
+  text-align: right;
+  li{
+    color: $color-grey4;
+    font-size: $size14;
+    line-height: 16px;
+  }
+}
+
+.copyright{
+  text-align: center;
+  p{
+    font-family: $secundary-font;
+    color: $color-grey3;
+    font-size: $size15;
+    height: 93px;
+    line-height: 93px;
+    margin-bottom: 0
+  }
+}
