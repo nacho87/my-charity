@@ -1,0 +1,30 @@
+@include font-face(roboto_regular, '../fonts/Roboto-Regular', normal, normal);
+@include font-face(robotoslab_regular, '../fonts/RobotoSlab-Regular', normal, normal);
+@include font-face(robotoslab_light, '../fonts/RobotoSlab-Regular', 300, normal);
+@include font-face(robotoslab_bold, '../fonts/RobotoSlab-Regular', 700, normal);
+
+@include font-face(icomoon, '../fonts/icomoon', normal, normal);
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-googleplus:before {
+  content: "\e600";
+}
+.icon-facebook:before {
+  content: "\e601";
+}
+.icon-twitter:before {
+  content: "\e602";
+}

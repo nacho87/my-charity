@@ -1,0 +1,33 @@
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body{
+  width: 1400px;
+  margin: 0 auto;
+  font-family: $primary-font;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: $secundary-font;
+}
+
+input{
+  font-family: $primary-font;
+  @include placeholder {
+
+  }
+}
+
+.container{
+  width: 1024px;
+  margin: 0 auto;
+}
+
+textarea,
+#{$all-text-inputs},
+select[multiple=multiple] {
+  font-family: $primary-font;
+}
