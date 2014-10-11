@@ -1,8 +1,13 @@
 @import "bourbon/bourbon";
-@import "base/base";
+@import "tools/settings";
+@import "bitters/base";
 @import "neat/neat";
 
 
-@import "partials/base";
+@import "base/global";
+@import "base/fontface";
+
 
 @import "partials/header";
+@import "partials/footer";
+
