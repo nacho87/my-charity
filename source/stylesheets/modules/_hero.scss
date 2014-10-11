@@ -1,0 +1,40 @@
+.hero{
+  background: url(../../images/hero.png);
+  height: 603px;
+  text-align: center;
+  width: 100%;
+  
+  h1,p{
+    color: $color-white;
+  }
+  
+  h1{
+    font-size: $size50;
+    font-family: $secundary-font;
+    padding-top: 215px;
+  }
+  
+  p{
+    font-family: $light;
+    font-size: $size24;
+    margin-bottom: 45px;
+  }
+
+  .btn-donate{
+    color: $color-green;
+    background: $color-white;
+    font-size: $size26;
+    line-height: 57px;
+    height: 57px;
+    font-family: $secundary-font;
+    padding: 0 57px;
+    display: inline-block;
+    border-radius: 100px;
+    box-shadow: 0px 0px 0px 3px rgba(0,0,0,0.2);
+
+    &:hover{
+      // opacity: 0.5;
+      color: rgba($color-green,0.5);
+    }
+  }
+}
