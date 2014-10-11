@@ -1,0 +1,11 @@
+.events{
+  @include outer-container;
+  text-align: center;
+}
+
+.list-events{
+  li{
+    @include span-columns(4);
+    @include omega(3n);
+  }
+}
