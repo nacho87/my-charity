@@ -2,16 +2,18 @@
   @include outer-container;
   text-align: center;
   padding-top: 80px;
-
+  padding-bottom: 145px;
   h2{
     font-size: $size50;
     color: $color-grey5;
     font-family: $light;
     font-weight: 300;
+    margin-bottom: 53px;
   }
 }
 
 .list-events{
+  @include clearfix;
   li{
     @include span-columns(4);
     @include omega(3n);
@@ -26,6 +28,7 @@
     background: $bg-grey;
     line-height: 88px;
     position: relative;
+    margin-bottom: 15px;
     &:before{
       @include triangle(24px, $bg-grey, down);
       position: absolute;
@@ -37,22 +40,51 @@
       content: "";
       text-align: center;
       line-height: 12px;
+
     }
     &:active,&.active{
       background: $bg-red;
-
+      &:before{
+        @include triangle(24px, $bg-red, down);
+        position: absolute;
+        bottom: -12px;
+        left: 0;
+        right: 0;
+        margin-right: auto;
+        margin-left: auto;
+        content: "";
+        text-align: center;
+        line-height: 12px;
+        
+      }
     }
   }
   .month{
     font-size: $size30;
+    margin-bottom: 17px;
+    color: $color-red;
   }
   .details{
     h5{
       font-size: $size18;
       font-family: $secundary-font;
+      margin-bottom: 5px;
     }
     p{
       font-size: $size14;
+      margin-bottom: 50px;
+    }
+  }
+  .btn-more{
+    background: $bg-grey;
+    display: inline-block;
+    color: $color-white;
+    padding: 12px 24px;
+    font-size: $size14;
+    line-height: $size14;
+    text-transform: uppercase;
+    &:active,&.active{
+      background: $bg-red;
     }
   }
 }
