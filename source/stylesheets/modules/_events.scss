@@ -1,11 +1,58 @@
 .events{
   @include outer-container;
   text-align: center;
+  padding-top: 80px;
+
+  h2{
+    font-size: $size50;
+    color: $color-grey5;
+    font-family: $light;
+    font-weight: 300;
+  }
 }
 
 .list-events{
   li{
     @include span-columns(4);
     @include omega(3n);
+  }
+  .day{
+    color: $color-white;
+    font-size: $size38;
+    font-family: $bold;
+    display: inline-block;
+    width: 88px;
+    height: 88px;
+    background: $bg-grey;
+    line-height: 88px;
+    position: relative;
+    &:before{
+      @include triangle(24px, $bg-grey, down);
+      position: absolute;
+      bottom: -12px;
+      left: 0;
+      right: 0;
+      margin-right: auto;
+      margin-left: auto;
+      content: "";
+      text-align: center;
+      line-height: 12px;
+    }
+    &:active,&.active{
+      background: $bg-red;
+
+    }
+  }
+  .month{
+    font-size: $size30;
+  }
+  .details{
+    h5{
+      font-size: $size18;
+      font-family: $secundary-font;
+    }
+    p{
+      font-size: $size14;
+    }
   }
 }
