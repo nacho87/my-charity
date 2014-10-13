@@ -1,7 +1,7 @@
 @include font-face(roboto_regular, '../fonts/Roboto-Regular', normal, normal);
 @include font-face(robotoslab_regular, '../fonts/RobotoSlab-Regular', normal, normal);
-@include font-face(robotoslab_light, '../fonts/RobotoSlab-Regular', 300, normal);
-@include font-face(robotoslab_bold, '../fonts/RobotoSlab-Regular', 700, normal);
+@include font-face(robotoslab_light, '../fonts/RobotoSlab-Light', 300, normal);
+@include font-face(robotoslab_bold, '../fonts/RobotoSlab-Bold', 700, normal);
 
 @include font-face(icomoon, '../fonts/icomoon', normal, normal);
 

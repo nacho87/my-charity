@@ -80,14 +80,9 @@ footer{
   form,input,button{
     height: 40px;
   }
-  form{
-    position: relative;
-  }
   input{
     background: $bg-grey1;
     font-size: 14px;
-    border: 0;
-    border-radius: 0;
     padding-left: 20px;
     padding-right: 130px;
     color: $color-white;
@@ -100,11 +95,8 @@ footer{
     }
   }
 
-  button{
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin:0;
+  button.btn-form{
+    
     font-size: 16px;
     background: $bg-red;
     font-weight: normal;
@@ -137,3 +129,5 @@ footer{
     margin-bottom: 0
   }
 }
+
+

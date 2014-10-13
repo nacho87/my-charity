@@ -1,22 +1,34 @@
 section.box-grids
-  .box.box-logo
-    figure
-      img
-  .box.box-image.box-image-grass
-    figure
-      img
-  .box.box-donate
-    h2 Donate Now !
-    p Lorem Ipsum is simply dummy text.
-  .box.box-signup-newsletter
-    .box-newsletter
-      h2 Sign up to newsletter
-      form
-        input type="email" placeholder="Enter your email" required="required"
-        button type="submit" Subscribe
-    figure
-      img
-  .box.box-facebook
-    .box-like-facebook
-      i.icon-facebook
-      p Like Now!
+  .row
+    .box.size-medium.grid1
+      .box-logo
+        figure
+          img src="../../images/logo-large.png" alt="logo"
+      figure.box-image-tree
+        img src="../../images/tree.jpg" alt="tree"
+
+    .box.size-small
+      .box-donate
+        h2 Donate Now !
+        p Lorem Ipsum is simply dummy text.
+
+  .row
+    .box.size-medium.newsletter
+      .box-newsletter
+        h2 Sign up to newsletter
+        .content-form
+          form.form
+            input type="email" placeholder="Enter your email" required="required"
+            button.btn-form type="submit" Subscribe
+        p 
+          |Lorem Ipsum is simply dummy text of the printing and typeset
+          br
+          |ing industry. Lorem Ipsum has been the industry's standard dummy text ever 
+      figure.box-grass
+        img src="../../images/grass.jpg" alt="grass"
+
+    .box.size-small.box-leaf
+      .box-like-facebook
+        div
+          i.icon-facebook
+          p Like Now !
