@@ -1,5 +1,6 @@
 header{
   padding-bottom: 15px;
+  background: $color-white;
   .container{
     @include outer-container;
   }
@@ -14,6 +15,7 @@ header{
 }
 
 .logo{
+  padding-top: 17px;
   figure{
     margin-left: 0px;
   }
@@ -24,7 +26,6 @@ header{
   line-height: 83px;
   li{
     display: inline-block;
-    margin-right: 5px;
     &:nth-last-child(1){
       margin-right: 0px;
     }
@@ -34,9 +35,9 @@ header{
     line-height: $size14;
     color: $color-grey5;
     font-family: $secundary-font;
-    padding: 12px 15px;
+    padding: 11px 15px;
     display: block;
-    border-radius: 5px;
+    border-radius: 2px;
     text-transform: uppercase;
     &:active,&.active{
       color: $color-white;
